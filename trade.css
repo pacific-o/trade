@@ -49,15 +49,12 @@ header {
 .side-part p:first-child {
  text-decoration: overline;
  font-size: 2.2rem;
-
 }
 
 .side-part p:nth-child(2) {
   text-decoration: underline;
   font-size: 2.2rem;
-
 }
-
 
 .list-item {
   font-size: 1.8rem
@@ -84,7 +81,6 @@ header {
   background-color: #330080;
   color: #fff
 }
-
 
 .top-section-container {
   display: grid;
@@ -113,7 +109,6 @@ header {
   align-items: center;
   justify-content: center;
   padding: 40px;
-
 }
 
 .start {
@@ -126,35 +121,32 @@ header {
   display: inline-block;
 }
 
-
 .top-section-link a {
   width: 220px;
   padding: 15px;
   border-radius: 4px;
   text-decoration-line: none;
   font-size: 1.5rem
-  }
+}
 
   .top-section-link p {
     color: #5c5cd6;
     text-align: center;
-  }
+}
 
   .start-link {
     background-color: #fff;
     color: black;
     top: 30px;
-  }
+}
 
   .learn-link {
     text-align: center;
-
   }
 
   .learn-link a{
     border: 1.3px solid #fff;
     color: #fff;
-
   }
 
   .right-section-part img {
@@ -164,12 +156,13 @@ header {
 
   .top-section-img {
     height: 385px;
-    background-image: url("top-img.png");
+    background-image: url("./images/top-img.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
     top: 50px;
   }
+
 
   /* MIDDLE SECTION STYLE */
 
@@ -206,11 +199,11 @@ header {
     display: grid;
     grid-template-columns: 650px 700px;
     justify-content: space-evenly;
-    background-image: url("side.png");
+    background-image: url("./images/side.png");
     background-position: right bottom;
     background-repeat: no-repeat;
     background-size: 60%;
-  }
+}
 
   .first {
     position: relative;
@@ -218,13 +211,13 @@ header {
     -webkit-animation-duration: 8s;
     animation-name: exam;
     animation-duration: 8s;
-  }
+}
 
   .movable-polygon {
     width: 120px;
     height: 120px;
     display: inline-block;
-  }
+}
 
   .hidden-comment {
     position: relative;
@@ -235,8 +228,7 @@ header {
     grid-template-columns: 175px 175px;
     opacity: 0; 
     transition: all 1s;
-
-  }
+}
 
   .hidden-paragraph {
     background-color: #00cccc;
@@ -245,49 +237,46 @@ header {
     padding: 15px;
     border-radius: 50px 0 0 50px; 
     text-align: center;
-     }
+}
 
   .hidden-background {
     width: 100%;
-    background-image: url("justdial.jpg");
+    background-image: url("./images/justdial.jpg");
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-      border-radius: 0 5px 5px 0; 
-
-  }
+    border-radius: 0 5px 5px 0; 
+}
 
   .item-1:hover .hidden-comment {
-  opacity: 1;
-  z-index: 1
+    opacity: 1;
+    z-index: 1
 }
 
-.item-2:hover .hidden-comment {
-  opacity: 1;
-  z-index: 1
+  .item-2:hover .hidden-comment {
+    opacity: 1;
+    z-index: 1
 }
 
-.item-3:hover .hidden-comment {
- opacity: 1;
- z-index: 1
+  .item-3:hover .hidden-comment {
+   opacity: 1;
+   z-index: 1
 }
 
-.item-4:hover .hidden-comment {
-opacity: 1;
-z-index: 1
+  .item-4:hover .hidden-comment {
+   opacity: 1;
+   z-index: 1
 }
 
-.item-5:hover .hidden-comment {
- opacity: 1;
- z-index: 1
+  .item-5:hover .hidden-comment {
+   opacity: 1;
+   z-index: 1
 }
 
-.item-6:hover .hidden-comment {
-  opacity: 1;
-  z-index: 1
+  .item-6:hover .hidden-comment {
+   opacity: 1;
+   z-index: 1
 }
-
- 
 
   .item-1 {
     position: relative;
@@ -299,12 +288,12 @@ z-index: 1
     animation-duration: 30s;
      animation-iteration-count: infinite;
      animation-timing-function: linear;
-  }
+}
 
     /* Safari 4.0 - 8.0 */
 @-webkit-keyframes first {
     0%   { left:265px; top:-705px;}
-  16.66%  { left:-5px; top:-570px;}
+  16.66%  { left:-5px; top:-560px;}
   33.32%  { left:-5px; top:-257px;}
   50%  { left:265px; top:-112px;}
   66.65%  { left:535px; top:-250px;}
@@ -315,7 +304,7 @@ z-index: 1
 /* Standard syntax */
 @keyframes first {
   0%   { left:265px; top:-705px;}
-  16.66%  { left:-5px; top:-570px;}
+  16.66%  { left:-5px; top:-560px;}
   33.32%  { left:-5px; top:-257px;}
   50%  { left:265px; top:-112px;}
   66.65%  { left:535px; top:-250px;}
@@ -323,11 +312,9 @@ z-index: 1
   100%  { left:265px; top:-705px;}
 }
 
-
-
   .item-2 {
     position: relative;
-    top: -560px;
+    top: -565px;
     left: -128px;
     -webkit-animation-name: second; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 30s; /* Safari 4.0 - 8.0 */
@@ -335,36 +322,34 @@ z-index: 1
     animation-duration: 30s;
      animation-iteration-count: infinite;
      animation-timing-function: linear;
-  }
+}
 
    /* Safari 4.0 - 8.0 */
 @-webkit-keyframes second {
-  0%   { left:-128px; top:-560px;}
-  16.66%  { left:-128px; top:-250px;}
-  33.32%  { left:140px; top:-120px;}
-  50%  { left:410px; top:-250px;}
+  0%   { left:-128px; top:-565px;}
+  16.66%  { left:-128px; top:-260px;}
+  33.32%  { left:140px; top:-110px;}
+  50%  { left:410px; top:-260px;}
   66.65%  { left:410px; top:-560px;}
-  83.3% { left:140px; top:-700px;}
-  100%  { left:-128px; top:-560px;}
+  83.3% { left:140px; top:-710px;}
+  100%  { left:-128px; top:-565px;}
 
 }
 
 /* Standard syntax */
 @keyframes second {
-  0%   { left:-128px; top:-570px;}
-  16.66%  { left:-128px; top:-250px;}
-  33.32%  { left:140px; top:-120px;}
-  50%  { left:410px; top:-250px;}
-  66.65%  { left:410px; top:-570px;}
-  83.3% { left:140px; top:-700px;}
-  100%  { left:-128px; top:-570px;}
+  0%   { left:-128px; top:-565px;}
+  16.66%  { left:-128px; top:-260px;}
+  33.32%  { left:140px; top:-110px;}
+  50%  { left:410px; top:-260px;}
+  66.65%  { left:410px; top:-560px;}
+  83.3% { left:140px; top:-710px;}
+  100%  { left:-128px; top:-565px;}
 }
-
-
 
   .item-3 {
     position: relative;
-    top: -258px;
+    top: -255px;
     left: 287px;
     -webkit-animation-name: third; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 30s; /* Safari 4.0 - 8.0 */
@@ -372,33 +357,31 @@ z-index: 1
     animation-duration: 30s;
      animation-iteration-count: infinite;
      animation-timing-function: linear;
-  }
+}
 
      /* Safari 4.0 - 8.0 */
 @-webkit-keyframes third {
 
-    0%   { left:287px; top:-258px;}
-  16.66%  { left:287px; top:-570px;}
-  33.32%  { left:17px; top:-700px;}
-  50%  { left:-252px; top:-570px;}
-  66.65%  { left:-252px; top:-258px;}
-  83.3% { left:17px; top:-120px;}
-  100%  { left:287px; top:-258px;}
+    0%   { left:287px; top:-255px;}
+  16.66%  { left:287px; top:-560px;}
+  33.32%  { left:17px; top:-708px;}
+  50%  { left:-252px; top:-565px;}
+  66.65%  { left:-252px; top:-255px;}
+  83.3% { left:17px; top:-110px;}
+  100%  { left:287px; top:-255px;}
 
 }
 
 /* Standard syntax */
 @keyframes third {
-  0%   { left:287px; top:-250px;}
-  16.66%  { left:287px; top:-570px;}
-  33.32%  { left:17px; top:-700px;}
-  50%  { left:-252px; top:-570px;}
-  66.65%  { left:-252px; top:-250px;}
-  83.3% { left:17px; top:-120px;}
-  100%  { left:287px; top:-250px;}
+  0%   { left:287px; top:-255px;}
+  16.66%  { left:287px; top:-560px;}
+  33.32%  { left:17px; top:-708px;}
+  50%  { left:-252px; top:-565px;}
+  66.65%  { left:-252px; top:-255px;}
+  83.3% { left:17px; top:-110px;}
+  100%  { left:287px; top:-255px;}
 }
-
-
 
   .item-4 {
     position: relative;
@@ -408,34 +391,31 @@ z-index: 1
     -webkit-animation-duration: 25s; /* Safari 4.0 - 8.0 */
     animation-name: forth;
     animation-duration: 25s;
-     animation-iteration-count: infinite;
-     animation-timing-function: linear;
-  }
-
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
 
      /* Safari 4.0 - 8.0 */
 @-webkit-keyframes forth {
   0%   { left:-307px; top:-300px;}
-  16.66%  { left:-107px; top:-200px;}
+  16.66%  { left:-107px; top:-190px;}
   33.32%  { left:92px; top:-300px;}
   50%  { left:92px; top:-520px;}
-  66.65%  { left:-107px; top:-620px;}
+  66.65%  { left:-107px; top:-630px;}
   83.3% { left:-307px; top:-520px;}
   100%  { left:-307px; top:-300px;}
 }
  
-
 /* Standard syntax */
 @keyframes forth {
-  0%   { left:-307px; top:-290px;}
-  16.66%  { left:-107px; top:-200px;}
-  33.32%  { left:92px; top:-290px;}
+  0%   { left:-307px; top:-300px;}
+  16.66%  { left:-107px; top:-190px;}
+  33.32%  { left:92px; top:-300px;}
   50%  { left:92px; top:-520px;}
-  66.65%  { left:-107px; top:-620px;}
+  66.65%  { left:-107px; top:-630px;}
   83.3% { left:-307px; top:-520px;}
-  100%  { left:-307px; top:-290px;}
+  100%  { left:-307px; top:-300px;}
 }
-
 
   .item-5 {
     position: relative;
@@ -447,35 +427,31 @@ z-index: 1
     animation-duration: 25s;
      animation-iteration-count: infinite;
      animation-timing-function: linear;
-  }
+}
 
        /* Safari 4.0 - 8.0 */
 @-webkit-keyframes fifth {
 
    0%   { left:-31px; top:-519px;}
-  16.66%  { left:-231px; top:-620px;}
+  16.66%  { left:-231px; top:-630px;}
   33.32%  { left:-431px; top:-520px;}
   50%  { left:-431px; top:-300px;}
-  66.65%  { left:-231px; top:-200px;}
+  66.65%  { left:-231px; top:-190px;}
   83.3% { left:-31px; top:-300px;}
   100%  { left:-31px; top:-519px;}
-
 
 }
 
 /* Standard syntax */
 @keyframes fifth {
   0%   { left:-31px; top:-519px;}
-  16.66%  { left:-231px; top:-620px;}
+  16.66%  { left:-231px; top:-630px;}
   33.32%  { left:-431px; top:-520px;}
   50%  { left:-431px; top:-300px;}
-  66.65%  { left:-231px; top:-200px;}
+  66.65%  { left:-231px; top:-190px;}
   83.3% { left:-31px; top:-300px;}
   100%  { left:-31px; top:-519px;}
 }
-
-
-
 
   .item-6 {
     position: relative;
@@ -485,9 +461,9 @@ z-index: 1
     -webkit-animation-duration: 20s; /* Safari 4.0 - 8.0 */
     animation-name: sixth;
     animation-duration: 20s;
-     animation-iteration-count: infinite;
-     animation-timing-function: linear;
-  }
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
 
          /* Safari 4.0 - 8.0 */
 @-webkit-keyframes sixth {
@@ -501,7 +477,6 @@ z-index: 1
   100%  { left:265px; top:-430px;}
 }
 
-}
 
 /* Standard syntax */
 @keyframes sixth {
@@ -513,9 +488,6 @@ z-index: 1
   83.3% { left:135px; top:-500px;}
   100%  { left:265px; top:-430px;}
 }
-
-
-
 
   .mql {
     padding-top: 90px;
@@ -531,14 +503,14 @@ z-index: 1
     color: #004d99;
     border: 1.7px solid #004d99;
     text-align: center;
-  }
+}
 
   .mql p {
     color: #004d99;
     margin-bottom: 30px;
     font-size: 2.5rem;
 
-  }
+}
 
   /* bottom section style */
 
@@ -547,23 +519,22 @@ z-index: 1
     background-image: url(".png");
     background-position: left bottom;
     background-repeat: no-repeat;
-
-  }
+}
 
   .bottom-section-comment {
     text-align: center;
-  }
+}
 
   .bottom-section-comment p {
     font-size: 2.5rem;
     color: #004d99;
-  }
+}
 
   .bottom-section-slide a {
     text-decoration-line: none;
     font-size: 6rem;
-    color: #00cccc
-  }
+    color: #00cccc;
+}
 
   .bottom-section-slide {
     margin-top: 20px;
@@ -572,69 +543,69 @@ z-index: 1
     justify-content: space-between;
     align-items: center;
     padding: 40px
-  }
+}
 
   .laracast {
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
-  }
+}
 
   .lara-comment {
     display: grid;
     grid-template-columns: 200px 400px;
     align-items: center;
-  }
+}
 
   .laracast p {
     color:#0066cc;
     font-size: 1.5rem;
-  }
+}
 
   /* footer style */
 
   footer {
     background-image: linear-gradient(to right, #5c5cd6, #00cccc);
-  }
+}
 
   .footer-content {
     padding: 50px;
     display: grid;
     grid-template-columns: 500px 400px 150px;
     justify-content: space-around;
-  }
+}
 
   .web-rights p{
     font-size: 1.5rem;
-  }
+}
 
   .footer-link {
     display: grid;
     grid-template-columns: 200px 200px;
     align-items: center;
-  }
+}
 
-    .footer-list li {
-      list-style: none;
-      font-size: 1.2rem;
-       padding: 5px
-   }
+  .footer-list li {
+    list-style: none;
+    font-size: 1.2rem;
+    padding: 5px
+}
 
-    .footer-list a {
-        text-decoration-line: none;
-        color: #fff;
-    }
+  .footer-list a {
+    text-decoration-line: none;
+    color: #fff;
+}
 
-    .footer-icon a {
-      padding: 5px;
-      font-size: 4rem;
-    }
+  .footer-icon a {
+    padding: 5px;
+    font-size: 4rem;
+}
 
   .footer-list li:first-child {
     font-size: 1.5rem;
     font-weight: bold;
     color: #fff;
-  }
+}
 
   .footer-icon a:first-child{
     color: #5c5cd6;

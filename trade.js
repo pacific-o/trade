@@ -15,7 +15,7 @@ movingItems[i].onmouseover=function animationPause() {
 
 for (var i = 0; i < 6; i++) {
 
-movingItems[i].onmouseout=function animationPause() {
+movingItems[i].onmouseout=function animationRun() {
 
 	for (var j = 0; j < 6; j++) {
 		movingItems[j].style.animationPlayState = "running";
