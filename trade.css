@@ -60,6 +60,10 @@ header {
   font-size: 1.8rem
 }
 
+.list-item:visited {
+  border-bottom: 2px solid #fff;
+}
+
 .right-part {
   display: grid;
   grid-template-columns: 40px 170px 40px;
@@ -279,15 +283,15 @@ header {
 }
 
   .item-1 {
-    position: relative;
-    top: -705px;
-    left: 265px;
-    -webkit-animation-name: first; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 30s; /* Safari 4.0 - 8.0 */
-    animation-name: first;
-    animation-duration: 30s;
-     animation-iteration-count: infinite;
-     animation-timing-function: linear;
+   position: relative;
+   top: -705px;
+   left: 265px;
+   -webkit-animation-name: first; /* Safari 4.0 - 8.0 */
+   -webkit-animation-duration: 30s; /* Safari 4.0 - 8.0 */
+   animation-name: first;
+   animation-duration: 30s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
 }
 
     /* Safari 4.0 - 8.0 */
@@ -313,15 +317,15 @@ header {
 }
 
   .item-2 {
-    position: relative;
-    top: -565px;
-    left: -128px;
-    -webkit-animation-name: second; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 30s; /* Safari 4.0 - 8.0 */
-    animation-name: second;
-    animation-duration: 30s;
-     animation-iteration-count: infinite;
-     animation-timing-function: linear;
+   position: relative;
+   top: -565px;
+   left: -128px;
+   -webkit-animation-name: second; /* Safari 4.0 - 8.0 */
+   -webkit-animation-duration: 30s; /* Safari 4.0 - 8.0 */
+   animation-name: second;
+   animation-duration: 30s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
 }
 
    /* Safari 4.0 - 8.0 */
@@ -565,6 +569,7 @@ header {
   /* footer style */
 
   footer {
+    margin-top: 100px;
     background-image: linear-gradient(to right, #5c5cd6, #00cccc);
 }
 
@@ -614,3 +619,117 @@ header {
   .footer-icon a:last-child {
     color: #0033cc;
   }
+
+  /* price page style sheet */
+
+  .price-top-section {
+    margin-top: 80px
+  }
+
+  .course-price {
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    justify-content: space-around;
+    align-items: center; 
+  }
+
+  .different-course {
+    border-radius: 8px;
+    height: 400px
+  }
+
+  .first-course , .forth-course {
+    border: 2px solid  #99e6ff;
+  }
+
+  .second-course {
+    border: 2px solid #1affd1;
+  }
+
+  .second-course h1 {
+    background-color: #1affd1
+  }
+
+  .third-course {
+    border: 2px solid #b366ff
+  }
+
+  .third-course h1 {
+    background-color: #b366ff
+  }
+
+  .topic p {
+    font-size: 3rem;
+    color: #004d66;
+    text-align: center;
+    padding: 50px
+  }
+
+  .course-topic h1 {
+    text-align: center;
+    font-size: 1rem;
+    color: #fff;
+    padding: 8px
+  }
+
+  .first-course h1 , .forth-course h1 {
+    background-color: #99e6ff
+  }
+
+  .course-condition {
+    margin-top: 30px
+  }
+
+  .course-condition p {
+    color: #0033cc;
+    text-align: center;
+    padding: 8px;
+    border-bottom: 1px solid black;
+    width: 80%; 
+    margin: auto;
+  }
+
+  .course-condition p:last-child {
+    border-bottom: none;
+  } 
+
+  .course-order {
+    position: relative;
+    top: 25px;
+    text-align: center;
+   }
+
+  .course-order button {
+    text-align: center;
+    padding: 15px 25px;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: none;
+    margin: auto;
+  }
+
+  .first-course button , .forth-course button {
+    border: 2px solid #99e6ff
+  }
+
+  .second-course button {
+    border: 2px solid #1affd1;
+  }
+
+  .third-course button {
+    border: 2px solid #b366ff;
+  }
+
+  .first-course .course-svg svg ,.forth-course .course-svg svg {
+    background-color: #ccf2ff
+  }
+
+  .second-course .course-svg svg {
+    background-color:  #80ffe5
+  }
+
+  .third-course .course-svg svg {
+    background-color: #d9b3ff
+  }
+
+
