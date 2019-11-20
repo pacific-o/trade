@@ -60,9 +60,6 @@ header {
   font-size: 1.8rem
 }
 
-.list-item:visited {
-  border-bottom: 2px solid #fff;
-}
 
 .right-part {
   display: grid;
@@ -677,7 +674,7 @@ header {
   }
 
   .course-condition {
-    margin-top: 30px
+    margin-top: 50px
   }
 
   .course-condition p {
@@ -695,7 +692,7 @@ header {
 
   .course-order {
     position: relative;
-    top: 25px;
+    top: 35px;
     text-align: center;
    }
 
@@ -720,16 +717,173 @@ header {
     border: 2px solid #b366ff;
   }
 
-  .first-course .course-svg svg ,.forth-course .course-svg svg {
+  .first-course .course-svg  ,.forth-course .course-svg  {
     background-color: #ccf2ff
   }
 
-  .second-course .course-svg svg {
+  .second-course .course-svg  {
     background-color:  #80ffe5
   }
 
-  .third-course .course-svg svg {
+  .third-course .course-svg  {
     background-color: #d9b3ff
   }
+
+  .course-svg svg {
+    position: relative;
+    top: 40px
+  }
+
+  /* bottom section style sheet */
+
+  .price-bottom-section {
+    margin-top: 50px
+  }
+
+  .discount-topic h1 {
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .price-discount {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+  }
+
+  .discount-condition p, .discount-condition h2 {
+    color: #004d66;
+    padding-top: 15px
+  }
+
+  .discount-condition p {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+  }
+
+  .discount-condition {
+    margin-bottom: 40px
+  }
+
+  .price-top-section-content {
+    position: relative;
+    top: -215px
+  }
+
+  /* sign up page style sheet */
+
+  .sign-up-form {
+    color: #004d66 
+  }
+
+  .sign-up-header h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .subscription,.sign-up-info {
+    padding: 30px;
+    width: 600px;
+    border: 1px solid black;
+    border-top: 2px solid black;
+    border-radius: 0 0 10px 10px;
+    font-size: 1.5rem;
+    margin: auto;
+    margin-top: 30px;
+
+  }
+
+   .subscription select {
+    display: block;
+    margin-bottom: 30px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid black 
+  }
+
+   .subscription input {
+    padding: 10px;
+    border: 1px solid black 
+   }
+
+   #label,label {
+    display: block;
+    margin-bottom: 10px
+   }
+
+   #confirm {
+    margin-left: -7px;
+    box-shadow: none;
+    width: 25%;
+    border-radius: 0 5px 5px 0;
+   }
+
+   #text {
+    width: 75%;
+    border-radius: 5px 0 0 5px;
+   }
+
+   .sign-up-info {
+    margin-bottom: 110px;
+   }
+
+   .sign-up-info h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px
+   }
+
+   .sign-up-info input {
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black
+   }
+
+    .card-adding {
+      display: grid;
+      grid-template-columns: 120px 380px;
+      justify-content: center;
+      align-items: center;
+      margin-top: 15px
+    }
+
+    .card-adding button {
+      background-color: #99e6ff;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 1rem;
+      color: #fff;
+      border:none; 
+    }
+
+    .card-adding p {
+      color: #004d66;
+      font-size: .8rem;
+      margin-left: 15px
+    }
+
+    .sign-up-btn {
+      display: grid;
+      grid-template-columns: 100%;
+      align-items: center;
+      position: relative;
+      top: 65px
+    }
+
+    .sign-up-btn button {
+      border-radius: 5px;
+      padding: 10px;
+      background-color: #fff;
+      border: 1px solid black;
+    }
+  
+
+
 
 
