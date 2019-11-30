@@ -10,28 +10,48 @@
   margin: auto;
 }
 
+:root {
+  --primary :#fff;
+  --dark : #004d99;
+  --light :#00cccc;
+  --light-blue :#99e6ff;
+  --light-green : #1affd1;
+  --purple :#b366ff;
+  --head :#5c5cd6;
+  --black:black;
+}
+
 /* header style */
 header {
-  background-image: linear-gradient(to right, #5c5cd6, #00cccc);
+  background-image: linear-gradient(to right, var(--head), var(--light));
 
 }
 
 .header-menu {
   display: grid;
+  grid-template-columns: repeat(3,1fr);
+  justify-content: space-between;
+  /*
   grid-template-columns: 300px auto 300px;
   justify-content: space-around;
+  */
   align-items: center;
   padding: 10px ;
 }
 
-.side-part {
-  align-items: center;
+.left-part {
+  text-align: center;
 }
+
 
 .list-group-horizental {
   display: grid;
-  grid-template-columns: 150px 150px 150px;
-  justify-content: space-between;
+  grid-template-columns: repeat(3,1fr);
+  justify-content: center;
+}
+
+.list-group-horizental a {
+  min-width: 75px;
 }
 
 .header-menu a {
@@ -39,11 +59,7 @@ header {
 }
 
 .header-menu a,p {
-  color: #fff
-}
-
-.left-part p{
- padding-left: 40px
+  color: var(--primary);
 }
 
 .side-part p:first-child {
@@ -64,11 +80,12 @@ header {
 .right-part {
   display: grid;
   grid-template-columns: 40px 170px 40px;
-  justify-content: end;
+  justify-content: center;
+  align-items: center;
 }
 
 .sign-up {
-  border: 1px solid #fff;
+  border: 1px solid var(--primary);
   border-radius: 4px;
   padding: 12px 25px;
   font-size: 1.5rem;
@@ -80,7 +97,7 @@ header {
 
 .top-section {
   background-color: #330080;
-  color: #fff
+  color: var(--primary);
 }
 
 .top-section-container {
@@ -131,13 +148,13 @@ header {
 }
 
   .top-section-link p {
-    color: #5c5cd6;
+    color: var(--light);
     text-align: center;
 }
 
   .start-link {
-    background-color: #fff;
-    color: black;
+    background-color: var(--primary);
+    color: var(--black);
     top: 30px;
 }
 
@@ -146,8 +163,8 @@ header {
   }
 
   .learn-link a{
-    border: 1.3px solid #fff;
-    color: #fff;
+    border: 1.3px solid var(--primary);
+    color: var(--primary);
   }
 
   .right-section-part img {
@@ -173,9 +190,14 @@ header {
 
   .top-middle-section {
     display: grid;
+        grid-gap: 40px;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    /*
+    display: grid;
     grid-template-columns: 200px 200px 200px 200px 200px;
     justify-content: space-evenly;
     align-items: center;
+    */
   }
 
   .middle-section-icon {
@@ -198,7 +220,7 @@ header {
     margin-top: 80px;
     height: 650px;
     display: grid;
-    grid-template-columns: 650px 700px;
+    grid-template-columns: repeat(2,1fr);
     justify-content: space-evenly;
     background-image: url("./images/side.png");
     background-position: right bottom;
@@ -232,7 +254,7 @@ header {
 }
 
   .hidden-paragraph {
-    background-color: #00cccc;
+    background-color: var(--light);
     font-size: 1.4rem;
     height: 100%;
     padding: 15px;
@@ -501,13 +523,13 @@ header {
     border-radius: 4px;
     text-decoration-line: none;
     font-size: 1.5rem;
-    color: #004d99;
-    border: 1.7px solid #004d99;
+    color: var(--dark);
+    border: 1.7px solid var(--dark);
     text-align: center;
 }
 
   .mql p {
-    color: #004d99;
+    color: var(--dark);
     margin-bottom: 30px;
     font-size: 2.5rem;
 
@@ -528,13 +550,13 @@ header {
 
   .bottom-section-comment p {
     font-size: 2.5rem;
-    color: #004d99;
+    color: var(--dark);
 }
 
   .bottom-section-slide a {
     text-decoration-line: none;
     font-size: 6rem;
-    color: #00cccc;
+    color: var(--light);
 }
 
   .bottom-section-slide {
@@ -559,15 +581,18 @@ header {
 }
 
   .laracast p {
-    color:#0066cc;
+    color:var(--dark);
     font-size: 1.5rem;
 }
 
   /* footer style */
 
   footer {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: end;
     margin-top: 100px;
-    background-image: linear-gradient(to right, #5c5cd6, #00cccc);
+    background-image: linear-gradient(to right, var(--head), var(--light));
 }
 
   .footer-content {
@@ -595,7 +620,7 @@ header {
 
   .footer-list a {
     text-decoration-line: none;
-    color: #fff;
+    color: var(--primary);
 }
 
   .footer-icon a {
@@ -606,21 +631,23 @@ header {
   .footer-list li:first-child {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #fff;
+    color: var(--primary);
 }
 
   .footer-icon a:first-child{
-    color: #5c5cd6;
+    color: var(--head);
   }
 
   .footer-icon a:last-child {
     color: #0033cc;
   }
 
+
   /* price page style sheet */
 
   .price-top-section {
-    margin-top: 80px
+    margin-top: 80px ;
+    height: 720px
   }
 
   .course-price {
@@ -636,23 +663,23 @@ header {
   }
 
   .first-course , .forth-course {
-    border: 2px solid  #99e6ff;
+    border: 2px solid var(--light-blue);
   }
 
   .second-course {
-    border: 2px solid #1affd1;
+    border: 2px solid var(--light-green);
   }
 
   .second-course h1 {
-    background-color: #1affd1
+    background-color: var(--light-green);
   }
 
   .third-course {
-    border: 2px solid #b366ff
+    border: 2px solid var(--purple);
   }
 
   .third-course h1 {
-    background-color: #b366ff
+    background-color: var(--purple);
   }
 
   .topic p {
@@ -665,12 +692,12 @@ header {
   .course-topic h1 {
     text-align: center;
     font-size: 1rem;
-    color: #fff;
+    color: var(--primary);
     padding: 8px
   }
 
   .first-course h1 , .forth-course h1 {
-    background-color: #99e6ff
+    background-color: var(--light-blue);
   }
 
   .course-condition {
@@ -681,7 +708,7 @@ header {
     color: #0033cc;
     text-align: center;
     padding: 8px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--black);
     width: 80%; 
     margin: auto;
   }
@@ -700,21 +727,21 @@ header {
     text-align: center;
     padding: 15px 25px;
     border-radius: 6px;
-    background-color: #fff;
+    background-color: var(--primary);
     box-shadow: none;
     margin: auto;
   }
 
   .first-course button , .forth-course button {
-    border: 2px solid #99e6ff
+    border: 2px solid var(--light-blue);
   }
 
   .second-course button {
-    border: 2px solid #1affd1;
+    border: 2px solid var(--light-green);
   }
 
   .third-course button {
-    border: 2px solid #b366ff;
+    border: 2px solid var(--purple);
   }
 
   .first-course .course-svg  ,.forth-course .course-svg  {
@@ -734,15 +761,18 @@ header {
     top: 40px
   }
 
+  .section-svg {
+    float: right;
+    position: relative;
+    bottom: 300px;
+  }
+
   /* bottom section style sheet */
 
-  .price-bottom-section {
-    margin-top: 50px
-  }
 
   .discount-topic h1 {
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .price-discount {
@@ -775,19 +805,27 @@ header {
   /* sign up page style sheet */
 
   .sign-up-form {
-    color: #004d66 
+    color: #004d66; 
+    position: relative;
+    top: -125px;
+  }
+
+  .sign-up-svg {
+    margin-top: 70px;
   }
 
   .sign-up-header h1 {
-    font-size: 2rem;
+    max-width: 1000px;
+    font-size: 2.5rem;
     text-align: center;
+    margin: auto;
   }
 
-  .subscription,.sign-up-info {
+  .subscription,.signing-info {
     padding: 30px;
     width: 600px;
-    border: 1px solid black;
-    border-top: 2px solid black;
+    border: 1px solid var(--black);
+    border-top: 2px solid var(--black);
     border-radius: 0 0 10px 10px;
     font-size: 1.5rem;
     margin: auto;
@@ -801,13 +839,13 @@ header {
     padding: 10px;
     width: 100%;
     border-radius: 5px;
-    background-color: #fff;
-    border: 1px solid black 
+    background-color: var(--primary);
+    border: 1px solid var(--black); 
   }
 
    .subscription input {
     padding: 10px;
-    border: 1px solid black 
+    border: 1px solid var(--black);
    }
 
    #label,label {
@@ -827,22 +865,22 @@ header {
     border-radius: 5px 0 0 5px;
    }
 
-   .sign-up-info {
+   .signing-info {
     margin-bottom: 110px;
    }
 
-   .sign-up-info h1 {
+   .signing-info h1 {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 30px
    }
 
-   .sign-up-info input {
+   .signing-info input {
     margin-bottom: 15px;
     width: 100%;
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid black
+    border: 1px solid var(--black);
    }
 
     .card-adding {
@@ -858,17 +896,17 @@ header {
       padding: 10px;
       border-radius: 5px;
       font-size: 1rem;
-      color: #fff;
+      color: var(--primary);
       border:none; 
     }
 
     .card-adding p {
-      color: #004d66;
+      color: var(--dark);
       font-size: .8rem;
       margin-left: 15px
     }
 
-    .sign-up-btn {
+    .signing-btn {
       display: grid;
       grid-template-columns: 100%;
       align-items: center;
@@ -876,14 +914,223 @@ header {
       top: 65px
     }
 
-    .sign-up-btn button {
+    .signing-btn button {
       border-radius: 5px;
       padding: 10px;
-      background-color: #fff;
-      border: 1px solid black;
+      background-color: var(--primary);
+      border: 1px solid var(--black);
+    }
+
+    /* sign in style sheet */
+
+    .sign-in-content {
+      display: grid;
+      grid-template-columns: 300px 700px;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-top: 50px
+    }
+
+    .sign-in-content a {
+      color: var(--dark);
+      text-decoration-line: none;
+      display: block;
+      padding: 15px 15px 0 20px;
+      font-size: 1.1rem
+    }
+
+    .profile {
+      border-bottom: 1px solid var(--black);
+      padding: 20px
+    }
+
+    .billing {
+      padding: 20px
     }
   
 
+/* styling for smaller device */
 
+@media only screen and (max-width: 1400px) {
+
+  .course-price {
+    grid-template-columns: 250px 250px;
+    justify-content: space-evenly;
+  }
+
+  .first-course , .second-course {
+    margin-bottom: 80px 
+  }
+
+  .price-top-section {
+    height: 1200px
+  }
+
+  .sign-up-header h1 {
+    font-size: 2rem;
+    width: 800px;
+  }
+
+  .top-section-container {
+    grid-template-columns: auto;
+    padding-top: 100px
+  }
+
+  .left-section-part {
+    text-align: center;
+  }
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+
+  .topic p {
+    font-size: 2rem;
+  }
+
+  .price-discount {
+    grid-template-columns: 720px;
+  }
+
+  .list-item {
+    font-size: 1.5rem;
+  }
+
+  .center-part {
+    text-align: center;
+  }
+
+  .bottom-middle-section {
+    grid-template-columns: auto;
+  }
+
+
+  .footer-content {
+    grid-template-columns: 380px 310px 150px;
+    justify-content: space-between;
+    width: 90%;
+  }
+
+  .footer-link {
+    grid-template-columns: 130px 180px;
+  }
+
+  .sign-in-content {
+    grid-template-columns: auto;
+  }
+
+
+  .profile-content {
+    text-align: center;
+  }
+
+   .signing-info h1 , .signing-info label , .subscription label{
+    font-size: 1.5rem
+  }
+
+   .section-svg {
+    bottom: 120px;
+  }
+
+  .sign-up-header h1 {
+    width: 500px;
+  }
+
+  .footer-content {
+    grid-template-columns: 400px;
+  }
+
+  .footer-link {
+    padding: 40px 30px 40px 0
+  }
+
+
+}
+
+
+@media only screen and (max-width: 800px) {
+
+
+
+   .list-group-horizental {
+    grid-template-columns: 55px 50px 60px;
+  }
+
+   .right-part {
+    grid-template-columns: 40px 150px 40px;
+    justify-content: flex-start;
+   }
+
+   .right-part a {
+    font-size: 1.2rem
+   }
+
+   .side-part p:first-child , .side-part p:nth-child(2) {
+    font-size: 1.5rem
+   }
+
+   .price-discount {
+    grid-template-columns: 450px;
+  }
+
+  .course-price {
+    grid-template-columns: 190px 190px;
+  }
+
+  .course-svg svg {
+    width: 190px;
+  }
+
+  .list-item {
+    font-size: 1.2rem;
+  }
+
+  .profile-content , .signing-info , .subscription {
+    width: 400px;
+  }
+
+  .card-adding {
+    grid-template-columns: auto;
+  }
+
+  .card-adding button {
+    margin-bottom: 20px
+  }
+
+  .card-adding p {
+    text-align: center;
+  }
+
+  .topic p {
+    text-align: left;
+    padding-left: 115px
+  }
+
+  .sign-up-header h1 {
+    text-align: left;
+    padding-left: 105px;
+    width: 420px
+  }
+
+  .top-section-comment h1 {
+    font-size: 2rem;
+    width: 500px;
+    margin: auto;
+  }
+
+  .top-section-comment p {
+    font-size: 1.3rem;
+    width: 450px;
+    margin: auto;
+  }
+
+  .top-section-link a {
+    width: 180px;
+ }
+
+ 
+
+}
 
 
