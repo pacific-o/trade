@@ -3,6 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+font-family: 'Roboto', sans-serif;
+
 }
 
 .container {
@@ -20,6 +22,7 @@
   --head :#5c5cd6;
   --black:black;
 }
+
 
 /* header style */
 header {
@@ -84,11 +87,11 @@ header {
   align-items: center;
 }
 
-.sign-up {
+.sign-up-link {
   border: 1px solid var(--primary);
   border-radius: 4px;
   padding: 12px 25px;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   text-align: center;
 }
 
@@ -186,11 +189,15 @@ header {
 
   .middle-section {
     margin-top: 150px;
+        background-image: url("./images/side.png");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 60%;
   }
 
   .top-middle-section {
     display: grid;
-        grid-gap: 40px;
+    grid-gap: 40px;
     grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
     /*
     display: grid;
@@ -218,15 +225,16 @@ header {
 
   .bottom-middle-section {
     margin-top: 80px;
-    height: 650px;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 700px 650px;
     justify-content: space-evenly;
-    background-image: url("./images/side.png");
-    background-position: right bottom;
-    background-repeat: no-repeat;
-    background-size: 60%;
+
 }
+
+  .middle-section-logo , .mql {
+    height: 650px
+}
+
 
   .first {
     position: relative;
@@ -240,6 +248,10 @@ header {
     width: 120px;
     height: 120px;
     display: inline-block;
+}
+
+.animation-pause {
+  animation-play-state: paused;
 }
 
   .hidden-comment {
@@ -588,34 +600,34 @@ header {
   /* footer style */
 
   footer {
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: end;
-    margin-top: 100px;
+    position: relative;
+    margin-top: 200px;
     background-image: linear-gradient(to right, var(--head), var(--light));
 }
 
   .footer-content {
     padding: 50px;
     display: grid;
-    grid-template-columns: 500px 400px 150px;
-    justify-content: space-around;
+    grid-template-columns: 370px 360px 180px;
+    grid-gap: 40px;
 }
 
   .web-rights p{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    line-height: 2rem;
 }
 
   .footer-link {
     display: grid;
-    grid-template-columns: 200px 200px;
+    grid-template-columns: 180px 180px;
     align-items: center;
 }
 
   .footer-list li {
     list-style: none;
     font-size: 1.2rem;
-    padding: 5px
+    padding: 5px;
+    width: 170px;
 }
 
   .footer-list a {
@@ -642,8 +654,18 @@ header {
     color: #0033cc;
   }
 
+  footer svg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
 
   /* price page style sheet */
+
+  section {
+    position: relative;
+  }
 
   .price-top-section {
     margin-top: 80px ;
@@ -762,9 +784,9 @@ header {
   }
 
   .section-svg {
-    float: right;
-    position: relative;
-    bottom: 300px;
+    right: 0;
+    position: absolute;
+    bottom:  100px;
   }
 
   /* bottom section style sheet */
@@ -804,10 +826,16 @@ header {
 
   /* sign up page style sheet */
 
+  .sign-up {
+    position: relative;
+  }
+
   .sign-up-form {
     color: #004d66; 
     position: relative;
     top: -125px;
+    z-index: 1;
+    overflow: hidden;
   }
 
   .sign-up-svg {
@@ -867,6 +895,7 @@ header {
 
    .signing-info {
     margin-bottom: 110px;
+    background-color: var(--primary);
    }
 
    .signing-info h1 {
@@ -920,6 +949,13 @@ header {
       background-color: var(--primary);
       border: 1px solid var(--black);
     }
+
+    .line {
+      position: absolute;
+      bottom: 320px;
+    }
+
+
 
     /* sign in style sheet */
 
@@ -980,6 +1016,20 @@ header {
     text-align: center;
   }
 
+  .bottom-middle-section {
+    grid-template-columns: 700px;
+  }
+
+  .mql {
+    height: 480px;
+    text-align: center;
+  }
+
+  .middle-section-logo {
+    padding-left: 30px
+  }
+
+
 }
 
 @media only screen and (max-width: 1200px) {
@@ -1001,23 +1051,25 @@ header {
     text-align: center;
   }
 
-  .bottom-middle-section {
-    grid-template-columns: auto;
-  }
-
-
   .footer-content {
-    grid-template-columns: 380px 310px 150px;
-    justify-content: space-between;
+    grid-template-columns: 370px 360px 180px;
+    grid-gap: 0;
+    align-items: center;
     width: 90%;
+    padding: 20px;
   }
 
   .footer-link {
     grid-template-columns: 130px 180px;
+    padding-left: 40px;
   }
 
   .sign-in-content {
     grid-template-columns: auto;
+  }
+
+  footer svg {
+    display: none;
   }
 
 
@@ -1035,14 +1087,6 @@ header {
 
   .sign-up-header h1 {
     width: 500px;
-  }
-
-  .footer-content {
-    grid-template-columns: 400px;
-  }
-
-  .footer-link {
-    padding: 40px 30px 40px 0
   }
 
 
@@ -1070,6 +1114,14 @@ header {
     font-size: 1.5rem
    }
 
+   .middle-section-logo {
+    display: none;
+   }
+
+   .mql {
+    padding-top: 40px;
+   }
+
    .price-discount {
     grid-template-columns: 450px;
   }
@@ -1087,7 +1139,7 @@ header {
   }
 
   .profile-content , .signing-info , .subscription {
-    width: 400px;
+    width: 395px;
   }
 
   .card-adding {
@@ -1110,7 +1162,8 @@ header {
   .sign-up-header h1 {
     text-align: left;
     padding-left: 105px;
-    width: 420px
+    width: 400px;
+    font-size: 1.6rem;
   }
 
   .top-section-comment h1 {
