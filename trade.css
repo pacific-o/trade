@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-font-family: 'Roboto', sans-serif;
+  fot-family: 'Open Sans', sans-serif;
 
 }
 
@@ -15,11 +15,11 @@ font-family: 'Roboto', sans-serif;
 :root {
   --primary :#fff;
   --dark : #004d99;
-  --light :#00cccc;
+  --light :#20b7c9;
   --light-blue :#99e6ff;
   --light-green : #1affd1;
   --purple :#b366ff;
-  --head :#5c5cd6;
+  --head :#636ef6;
   --black:black;
 }
 
@@ -34,10 +34,6 @@ header {
   display: grid;
   grid-template-columns: repeat(3,1fr);
   justify-content: space-between;
-  /*
-  grid-template-columns: 300px auto 300px;
-  justify-content: space-around;
-  */
   align-items: center;
   padding: 10px ;
 }
@@ -98,14 +94,24 @@ header {
 
 /* section style */
 
+section {
+  background-image: url("./images/top-graphic.png");
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: 37%;
+
+}
+
 .top-section {
-  background-color: #330080;
+  background-image: url("./images/bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   color: var(--primary);
 }
 
 .top-section-container {
   display: grid;
-  grid-template-columns: 700px 550px;
+  grid-template-columns: 700px 580px;
   justify-content: space-around;
   align-items: center;
   padding-top: 200px;
@@ -123,6 +129,10 @@ header {
 .right-section-part {
   text-align: center;
 }
+
+.right-section-part img {
+    height: 400px;
+  }
 
 .top-section-link {
   display: grid;
@@ -150,32 +160,29 @@ header {
   font-size: 1.5rem
 }
 
-  .top-section-link p {
+.top-section-link p {
     color: var(--light);
     text-align: center;
 }
 
-  .start-link {
+.start-link {
     background-color: var(--primary);
     color: var(--black);
     top: 30px;
 }
 
-  .learn-link {
+.learn-link {
     text-align: center;
   }
 
-  .learn-link a{
+.learn-link a{
     border: 1.3px solid var(--primary);
     color: var(--primary);
   }
 
-  .right-section-part img {
-    width: 500px;
-    height: 400px
-  }
 
-  .top-section-img {
+
+.top-section-img {
     height: 385px;
     background-image: url("./images/top-img.png");
     background-repeat: no-repeat;
@@ -189,7 +196,7 @@ header {
 
   .middle-section {
     margin-top: 150px;
-        background-image: url("./images/side.png");
+    background-image: url("./images/side.png");
     background-position: right bottom;
     background-repeat: no-repeat;
     background-size: 60%;
@@ -199,12 +206,6 @@ header {
     display: grid;
     grid-gap: 40px;
     grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
-    /*
-    display: grid;
-    grid-template-columns: 200px 200px 200px 200px 200px;
-    justify-content: space-evenly;
-    align-items: center;
-    */
   }
 
   .middle-section-icon {
@@ -267,9 +268,9 @@ header {
 
   .hidden-paragraph {
     background-color: var(--light);
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     height: 100%;
-    padding: 15px;
+    padding: 18px;
     border-radius: 50px 0 0 50px; 
     text-align: center;
 }
@@ -554,6 +555,8 @@ header {
     background-image: url(".png");
     background-position: left bottom;
     background-repeat: no-repeat;
+    padding-bottom: 60px;
+
 }
 
   .bottom-section-comment {
@@ -565,25 +568,35 @@ header {
     color: var(--dark);
 }
 
-  .bottom-section-slide a {
-    text-decoration-line: none;
+  .bottom-section-slide p {
     font-size: 6rem;
     color: var(--light);
+    cursor: pointer;
+}
+
+.left-slide p:hover , .right-slide p:hover {
+  color: var(--light-blue);
 }
 
   .bottom-section-slide {
     margin-top: 20px;
     display: grid;
     grid-template-columns: 60px auto 60px;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 40px
+    padding: 40px;
+}
+
+.slides {
+  width: 1200px;
+  overflow: hidden;
 }
 
   .laracast {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto auto auto auto;
     align-items: center;
+    transition: all 2s;
 }
 
   .lara-comment {
@@ -591,6 +604,7 @@ header {
     grid-template-columns: 200px 400px;
     align-items: center;
 }
+
 
   .laracast p {
     color:var(--dark);
@@ -601,7 +615,6 @@ header {
 
   footer {
     position: relative;
-    margin-top: 200px;
     background-image: linear-gradient(to right, var(--head), var(--light));
 }
 
@@ -668,8 +681,12 @@ header {
   }
 
   .price-top-section {
-    margin-top: 80px ;
-    height: 720px
+    background-image: url("./images/graphic.png");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    margin-top: 80px;
+    margin-bottom: 50px;
   }
 
   .course-price {
@@ -821,12 +838,17 @@ header {
 
   .price-top-section-content {
     position: relative;
-    top: -215px
+    top: -215px;
+    padding-bottom: 70px;
   }
 
   /* sign up page style sheet */
 
   .sign-up {
+    background-image: url("./images/mac-air.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 30%;
     position: relative;
   }
 
@@ -1029,6 +1051,10 @@ header {
     padding-left: 30px
   }
 
+  .slides {
+    width: 600px;
+  }
+
 
 }
 
@@ -1083,6 +1109,10 @@ header {
 
    .section-svg {
     bottom: 120px;
+  }
+
+  .sign-up {
+    background-image: none;
   }
 
   .sign-up-header h1 {
