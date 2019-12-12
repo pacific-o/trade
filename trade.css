@@ -161,127 +161,127 @@ section {
 }
 
 .top-section-link p {
-    color: var(--light);
-    text-align: center;
+  color: var(--light);
+  text-align: center;
 }
 
 .start-link {
-    background-color: var(--primary);
-    color: var(--black);
-    top: 30px;
+  background-color: var(--primary);
+  color: var(--black);
+  top: 30px;
 }
 
 .learn-link {
-    text-align: center;
+  text-align: center;
   }
 
 .learn-link a{
-    border: 1.3px solid var(--primary);
-    color: var(--primary);
+  border: 1.3px solid var(--primary);
+  color: var(--primary);
   }
 
 
 
 .top-section-img {
-    height: 385px;
-    background-image: url("./images/top-img.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    position: relative;
-    top: 50px;
+  height: 385px;
+  background-image: url("./images/top-img.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  top: 50px;
   }
 
 
   /* MIDDLE SECTION STYLE */
 
-  .middle-section {
-    margin-top: 150px;
-    background-image: url("./images/side.png");
-    background-position: right bottom;
-    background-repeat: no-repeat;
-    background-size: 60%;
+.middle-section {
+  margin-top: 150px;
+  background-image: url("./images/side.png");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 60%;
   }
 
-  .top-middle-section {
-    display: grid;
-    grid-gap: 40px;
-    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+.top-middle-section {
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
   }
 
-  .middle-section-icon {
-    text-decoration-line: none;
-    text-align: center;
+.middle-section-icon {
+  text-decoration-line: none;
+  text-align: center;
   }
 
-  .middle-section-icon p {
-    padding-top: 15px;
-    color: #008080;
-    font-size: .9rem;
+.middle-section-icon p {
+  padding-top: 15px;
+  color: #008080;
+  font-size: .9rem;
   }
 
-  .middle-section-icon img {
-    width: 60px;
-    height: 60px;
+.middle-section-icon img {
+  width: 60px;
+  height: 60px;
   }
 
-  .bottom-middle-section {
-    margin-top: 80px;
-    display: grid;
-    grid-template-columns: 700px 650px;
-    justify-content: space-evenly;
+.bottom-middle-section {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 700px 650px;
+  justify-content: space-evenly;
 
 }
 
-  .middle-section-logo , .mql {
-    height: 650px
+.middle-section-logo , .mql {
+  height: 650px
 }
 
 
-  .first {
-    position: relative;
-    -webkit-animation-name: example;
-    -webkit-animation-duration: 8s;
-    animation-name: exam;
-    animation-duration: 8s;
+.first {
+  position: relative;
+  -webkit-animation-name: example;
+  -webkit-animation-duration: 8s;
+  animation-name: exam;
+  animation-duration: 8s;
 }
 
-  .movable-polygon {
-    width: 120px;
-    height: 120px;
-    display: inline-block;
+.movable-polygon {
+  width: 120px;
+  height: 120px;
+  display: inline-block;
 }
 
 .animation-pause {
   animation-play-state: paused;
 }
 
-  .hidden-comment {
-    position: relative;
-    top: -104px;
-    left: 8px;
-    width: 350px;
-    display: grid;
-    grid-template-columns: 175px 175px;
-    opacity: 0; 
-    transition: all 1s;
+.hidden-comment {
+  position: relative;
+  top: -104px;
+  left: 8px;
+  width: 350px;
+  display: grid;
+  grid-template-columns: 175px 175px;
+  opacity: 0; 
+  transition: all 1s;
 }
 
-  .hidden-paragraph {
-    background-color: var(--light);
-    font-size: 1.3rem;
-    height: 100%;
-    padding: 18px;
-    border-radius: 50px 0 0 50px; 
-    text-align: center;
+.hidden-paragraph {
+  background-color: var(--light);
+  font-size: 1.3rem;
+  height: 100%;
+  padding: 18px;
+  border-radius: 50px 0 0 50px; 
+  text-align: center;
 }
 
-  .hidden-background {
-    width: 100%;
-    background-image: url("./images/justdial.jpg");
-    height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 0 5px 5px 0; 
+.hidden-background {
+  width: 100%;
+  background-image: url("./images/justdial.jpg");
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 0 5px 5px 0; 
 }
 
   .item-1:hover .hidden-comment {
@@ -398,7 +398,7 @@ section {
      /* Safari 4.0 - 8.0 */
 @-webkit-keyframes third {
 
-    0%   { left:287px; top:-255px;}
+  0%   { left:287px; top:-255px;}
   16.66%  { left:287px; top:-560px;}
   33.32%  { left:17px; top:-708px;}
   50%  { left:-252px; top:-565px;}
@@ -419,19 +419,19 @@ section {
   100%  { left:287px; top:-255px;}
 }
 
-  .item-4 {
-    position: relative;
-    top: -300px;
-    left: -307px;
-    -webkit-animation-name: forth; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 25s; /* Safari 4.0 - 8.0 */
-    animation-name: forth;
-    animation-duration: 25s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+.item-4 {
+  position: relative;
+  top: -300px;
+  left: -307px;
+  -webkit-animation-name: forth; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 25s; /* Safari 4.0 - 8.0 */
+  animation-name: forth;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
-     /* Safari 4.0 - 8.0 */
+    /* Safari 4.0 - 8.0 */
 @-webkit-keyframes forth {
   0%   { left:-307px; top:-300px;}
   16.66%  { left:-107px; top:-190px;}
@@ -453,22 +453,22 @@ section {
   100%  { left:-307px; top:-300px;}
 }
 
-  .item-5 {
-    position: relative;
-    top: -519px;
-    left: -31px;
-    -webkit-animation-name: fifth; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 25s; /* Safari 4.0 - 8.0 */
-    animation-name: fifth;
-    animation-duration: 25s;
-     animation-iteration-count: infinite;
-     animation-timing-function: linear;
+.item-5 {
+  position: relative;
+  top: -519px;
+  left: -31px;
+  -webkit-animation-name: fifth; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 25s; /* Safari 4.0 - 8.0 */
+  animation-name: fifth;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
        /* Safari 4.0 - 8.0 */
 @-webkit-keyframes fifth {
 
-   0%   { left:-31px; top:-519px;}
+  0%   { left:-31px; top:-519px;}
   16.66%  { left:-231px; top:-630px;}
   33.32%  { left:-431px; top:-520px;}
   50%  { left:-431px; top:-300px;}
@@ -489,16 +489,16 @@ section {
   100%  { left:-31px; top:-519px;}
 }
 
-  .item-6 {
-    position: relative;
-    top: -430px;
-    left: 265px;
-    -webkit-animation-name: sixth; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 20s; /* Safari 4.0 - 8.0 */
-    animation-name: sixth;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+.item-6 {
+  position: relative;
+  top: -430px;
+  left: 265px;
+  -webkit-animation-name: sixth; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 20s; /* Safari 4.0 - 8.0 */
+  animation-name: sixth;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
          /* Safari 4.0 - 8.0 */
@@ -1055,6 +1055,9 @@ section {
     width: 600px;
   }
 
+   footer svg {
+    display: none;
+  }
 
 }
 
@@ -1078,11 +1081,17 @@ section {
   }
 
   .footer-content {
-    grid-template-columns: 370px 360px 180px;
+    grid-template-columns: auto auto auto;
     grid-gap: 0;
+    justify-content: space-evenly;
     align-items: center;
     width: 90%;
     padding: 20px;
+  }
+
+  .footer-icon {
+    display: grid;
+    grid-template-columns: auto;
   }
 
   .footer-link {
@@ -1092,10 +1101,6 @@ section {
 
   .sign-in-content {
     grid-template-columns: auto;
-  }
-
-  footer svg {
-    display: none;
   }
 
 
@@ -1118,6 +1123,10 @@ section {
   .sign-up-header h1 {
     width: 500px;
   }
+
+    .middle-section-logo {
+    display: none;
+   }
 
 
 }
@@ -1144,9 +1153,33 @@ section {
     font-size: 1.5rem
    }
 
-   .middle-section-logo {
-    display: none;
+ 
+
+   .right-section-part img{
+    width: 400px;
+    height: 300px
    }
+
+  .slides {
+    width: 400px;
+    margin: auto;
+  }
+
+  .lara-comment {
+    grid-template-columns: 200px 200px;
+  }
+
+  .lara-comment p {
+    font-size: 1.3rem;
+  }
+
+  .left-slide p , .right-slide p {
+    font-size: 4.5rem;
+  }
+
+  .left-slide p {
+    text-align: right;
+  }
 
    .mql {
     padding-top: 40px;

@@ -6,7 +6,17 @@ $(".movable-polygon").hover(function() {
 
 
 $(window).resize(function () {
-	if ($(window).width() < 1400) {
+	if ($(window).width() < 800) {
+		$(".right-slide").click(function () {
+	var length = $(".laracast").css("margin-left");
+	if (length === "-2000px") {
+		$(".laracast").css("margin-left","+=2000px");
+	}else { 
+	$(".laracast").css("margin-left","-=400px");
+	};
+});
+
+	}else {
 		$(".right-slide").click(function () {
 	var length = $(".laracast").css("margin-left");
 	if (length === "-2400px") {
@@ -16,38 +26,28 @@ $(window).resize(function () {
 	};
 });
 
-	}else {
-		$(".right-slide").click(function () {
-	var length = $(".laracast").css("margin-left");
-	if (length === "-2400px") {
-		$(".laracast").css("margin-left","+=2400px");
-	}else { 
-	$(".laracast").css("margin-left","-=1200px");
-	};
-});
-
 	}
 });
 
 
 $(window).resize(function () {
-	if ($(window).width() < 1400) {
+	if ($(window).width() < 800) {
+		$(".left-slide").click(function () {
+	var length = $(".laracast").css("margin-left");
+	if (length === "0px") {
+		$(".laracast").css("margin-left","-=2000px");
+	}else { 
+	$(".laracast").css("margin-left","+=400px");
+	};
+});
+
+	}else {
 		$(".left-slide").click(function () {
 	var length = $(".laracast").css("margin-left");
 	if (length === "0px") {
 		$(".laracast").css("margin-left","-=2400px");
 	}else { 
 	$(".laracast").css("margin-left","+=600px");
-	};
-});
-
-	}else {
-		$(".left-slide").click(function () {
-	var length = $(".laracast").css("margin-left");
-	if (length === "0px") {
-		$(".laracast").css("margin-left","-=2400px");
-	}else { 
-	$(".laracast").css("margin-left","+=1200px");
 	};
 });
 
@@ -61,7 +61,7 @@ $(".right-slide").click(function () {
 	if (length === "-2400px") {
 		$(".laracast").css("margin-left","+=2400px");
 	}else { 
-	$(".laracast").css("margin-left","-=1200px");
+	$(".laracast").css("margin-left","-=600px");
 	};
 });
 
@@ -70,6 +70,6 @@ $(".left-slide").click(function () {
 	if (length === "0px") {
 		$(".laracast").css("margin-left","-=2400px");
 	}else {
-	$(".laracast").css("margin-left","+=1200px");
+	$(".laracast").css("margin-left","+=600px");
 		};
 });
