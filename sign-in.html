@@ -1,111 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="trade.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-	<title>sign in</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="trade.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>sign in</title>
 </head>
+
 <body>
-	  <header>
-    <div class="container header-menu">
-      <div class="side-part left-part">
-        <p>mql</p>
-        <p>casts</p>
-      </div>
-      <div class="center-part">
-        <ul class="list-group-horizental">
-          <a href="#" class="list-item">Series</a>
-          <a href="price.html" class="list-item">Plan</a>
-          <a href="#" class="list-item">Sign In</a>
-        </ul>
-      </div>
-      <div class="side-part right-part">
-        <svg height="50" width="40">
-          <line x1="25" y1="15" x2="25" y2="35" style="stroke:#fff;stroke-width:2" />
-          <line x1="30" y1="10" x2="30" y2="40" style="stroke:#fff;stroke-width:2" />
-          <line x1="35" y1="5" x2="35" y2="45" style="stroke:#fff;stroke-width:2" />
+    <header>
+        <div class="container header-menu">
+            <div class="side-part left-part">
+                <a href="trade.html">
+                    <p>mql</p>
+                    <p>casts</p>
+                </a>
+            </div>
+            <div class="center-part">
+                <p><a href="#" class="burger"><i class="fas fa-bars"></i></a></p>
+                <ul class="list-group-horizental">
+                    <a href="#" class="list-item">Series</a>
+                    <a href="price.html" class="list-item">Plan</a>
+                    <a href="#" class="list-item">Sign In</a>
+                </ul>
+            </div>
+            <div class="side-part right-part">
+                <svg height="50" width="40">
+                    <line x1="25" y1="15" x2="25" y2="35" style="stroke:#fff;stroke-width:2" />
+                    <line x1="30" y1="10" x2="30" y2="40" style="stroke:#fff;stroke-width:2" />
+                    <line x1="35" y1="5" x2="35" y2="45" style="stroke:#fff;stroke-width:2" />
+                </svg>
+                <a href="sign-up.html" class="sign-up-link"><i class="fas fa-laptop"></i> Sign Up</a>
+                <svg height="50" width="40">
+                    <line x1="5" y1="5" x2="5" y2="45" style="stroke:#fff;stroke-width:2" />
+                    <line x1="10" y1="10" x2="10" y2="40" style="stroke:#fff;stroke-width:2" />
+                    <line x1="15" y1="15" x2="15" y2="35" style="stroke:#fff;stroke-width:2" />
+                </svg>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <ul class="nav-bar-list container">
+                <li><a href="#" class="list-item">Series</a></li>
+                <li><a href="price.html" class="list-item">Plan</a></li>
+                <li><a href="sign-in.html" class="list-item">Sign In</a></li>
+                <li><a href="sign-up.html" class="list-item">Sign Up</a></li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <div class="sign-in-content container">
+            <div class="profile-content">
+                <div class="profile">
+                    <h1>PROFILE</h1>
+                    <a href="#">Acount Setting</a>
+                </div>
+                <div class="billing">
+                    <h1>BILLING</h1>
+                    <a href="#">Add a Card</a>
+                    <a href="#">Choose a plan</a>
+                </div>
+            </div>
+            <div class="signing-info">
+                <form action="" method="">
+                    <h1>Acount information</h1>
+                    <label for="user-name">User name :</label>
+                    <input type="text" id="user-name">
+                    <label for="email">Email :</label>
+                    <input type="email" id="email">
+                    <label for="password">Enter password :</label>
+                    <input type="password" id="password">
+                    <label for="password">Repeat password :</label>
+                    <input type="password" id="password">
+                </form>
+                <div class="signing-btn">
+                    <button><i class="far fa-play-circle"></i> SIGN IN</button>
+                    <svg class="wide-svg" width="538" height="15">
+                        <line x1="15" y1="5" x2="523" y2="5" style="stroke:black;stroke-width:1" />
+                        <line x1="20" y1="10" x2="518" y2="10" style="stroke:black;stroke-width:1" />
+                    </svg>
+                    <svg class="small-svg" width="330" height="15">
+                        <line x1="15" y1="5" x2="315" y2="5" style="stroke:black;stroke-width:1" />
+                        <line x1="20" y1="10" x2="310" y2="10" style="stroke:black;stroke-width:1" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content container">
+            <div class="side-part web-rights">
+                <p>mql</p>
+                <p>casts</p>
+                <p>the most concise screencasts
+                    <br> for serious traders </p>
+                <p><i class="far fa-copyright"></i> MQL cast 2017. all rights reserved</p>
+            </div>
+            <div class="footer-link">
+                <ul class="footer-list">
+                    <li>Learn</li>
+                    <li><a href="#">Series</a></li>
+                    <li><a href="price.html">Plan</a></li>
+                    <li><a href="sign-in.html">Sign In</a></li>
+                    <li><a href="sign-up.html">Sign Up</a></li>
+                </ul>
+                <ul class="footer-list">
+                    <li>Extras</li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Comunity Tutorials</a></li>
+                </ul>
+            </div>
+            <div class="footer-icon">
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+            </div>
+        </div>
+        <svg height="255" width="330">
+            <polygon points="150,50 290,125 290,275 150,350 10,275 10,125" style="fill:none;stroke:#ccf2ff;stroke-width:6;stroke-opacity:.5" />
+            <polygon points="150,110 240,155 240,275 150,300 60,260 60,155" style="fill:#ccf2ff;stroke:none;stroke-width:0;fill-opacity:.5;" />
         </svg>
-        <a href="sign-up.html" class="sign-up-link"><i class="fas fa-laptop"></i> Sign Up</a>
-        <svg height="50" width="40">
-          <line x1="5" y1="5" x2="5" y2="45" style="stroke:#fff;stroke-width:2" />
-          <line x1="10" y1="10" x2="10" y2="40" style="stroke:#fff;stroke-width:2" />
-          <line x1="15" y1="15" x2="15" y2="35" style="stroke:#fff;stroke-width:2" />
-        </svg>
-      </div>
-    </div>
-  </header>
-  <section>
-  	<div class="sign-in-content container">
-  		<div class="profile-content">
-  			<div class="profile">
-  				<h1>PROFILE</h1>
-  				<a href="#">Acount Setting</a>
-  			</div>
-  			<div class="billing">
-  				<h1>BILLING</h1>
-  				<a href="#">Add a Card</a>
-  				<a href="#">Choose a plan</a>
-  			</div>
-  		</div>
-  	    <div class="signing-info">
-  		    <form action="" method="">
-  			    <h1>Acount information</h1>
-  			    <label for="user-name">User name :</label>
-  			    <input type="text" id="user-name">
-  			    <label for="email">Email :</label>
-  			    <input type="email" id="email">
-  			    <label for="password">Enter password :</label>
-  			    <input type="password" id="password">
-  			    <label for="password">Repeat password :</label>
-  			    <input type="password" id="password">
-  		    </form>
-  		    <div class="signing-btn">
-  			    <button><i class="far fa-play-circle"></i>SIGN IN</button>
-  			      <svg width="538" height="15">
-                    <line x1="15" y1="5" x2="523" y2="5" style="stroke:black;stroke-width:1" />
-                    <line x1="20" y1="10" x2="518" y2="10" style="stroke:black;stroke-width:1" />
-                  </svg>
-  		   </div>
-  	   </div>
-  	</div>
-  </section>
-  <footer>
-    <div class="footer-content container">
-      <div class="side-part web-rights">
-        <p>mql</p>
-        <p>casts</p>
-        <p>the most concise screencasts <br> for serious traders </p>
-        <p><i class="far fa-copyright"></i> MQL cast 2017. all rights reserved</p>
-      </div>
-      <div class="footer-link">
-        <ul class="footer-list">
-          <li>Learn</li>
-          <li><a href="#">Series</a></li>
-          <li><a href="price.html">Plan</a></li>
-          <li><a href="sign-in.html">Sign In</a></li>
-          <li><a href="sign-up.html">Sign Up</a></li>
-        </ul>
-        <ul class="footer-list">
-          <li>Extras</li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Terms</a></li>
-          <li><a href="#">Comunity Tutorials</a></li>
-        </ul>
-      </div>
-      <div class="footer-icon">
-        <a href="#"><i class="fab fa-twitter-square"></i></a>
-        <a href="#"><i class="fab fa-facebook-square"></i></a>
-      </div>
-    </div>
-    <svg height="255" width="330">
-        <polygon points="150,50 290,125 290,275 150,350 10,275 10,125" style="fill:none;stroke:#ccf2ff;stroke-width:6;stroke-opacity:.5" />
-        <polygon points="150,110 240,155 240,275 150,300 60,260 60,155" style="fill:#ccf2ff;stroke:none;stroke-width:0;fill-opacity:.5;" />
-    </svg>
-  </footer>
-<script src="https://kit.fontawesome.com/27107847e4.js" crossorigin="anonymous"></script>	
+    </footer>
+    <script src="https://kit.fontawesome.com/27107847e4.js" crossorigin="anonymous"></script>
+    <script src="trade.js"></script>
 </body>
+
 </html>

@@ -1,217 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	  <link rel="stylesheet" href="trade.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="trade.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-	<title>price</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>price</title>
 </head>
+
 <body>
-	  <header>
-    <div class="container header-menu">
-      <div class="side-part left-part">
-        <p>mql</p>
-        <p>casts</p>
-      </div>
-      <div class="center-part">
-        <ul class="list-group-horizental">
-          <a href="#" class="list-item">Series</a>
-          <a href="price.html" class="list-item">Plan</a>
-          <a href="sign-in.html" class="list-item">Sign In</a>
-        </ul>
-      </div>
-      <div class="side-part right-part">
-        <svg height="50" width="40">
-          <line x1="25" y1="15" x2="25" y2="35" style="stroke:#fff;stroke-width:2" />
-          <line x1="30" y1="10" x2="30" y2="40" style="stroke:#fff;stroke-width:2" />
-          <line x1="35" y1="5" x2="35" y2="45" style="stroke:#fff;stroke-width:2" />
+    <header>
+        <div class="container header-menu">
+            <div class="side-part left-part">
+                <a href="trade.html">
+                    <p>mql</p>
+                    <p>casts</p>
+                </a>
+            </div>
+            <div class="center-part">
+                <p><a href="#" class="burger"><i class="fas fa-bars"></i></a></p>
+                <ul class="list-group-horizental">
+                    <a href="#" class="list-item">Series</a>
+                    <a href="price.html" class="list-item">Plan</a>
+                    <a href="sign-in.html" class="list-item">Sign In</a>
+                </ul>
+            </div>
+            <div class="side-part right-part">
+                <svg height="50" width="40">
+                    <line x1="25" y1="15" x2="25" y2="35" style="stroke:#fff;stroke-width:2" />
+                    <line x1="30" y1="10" x2="30" y2="40" style="stroke:#fff;stroke-width:2" />
+                    <line x1="35" y1="5" x2="35" y2="45" style="stroke:#fff;stroke-width:2" />
+                </svg>
+                <a href="sign-up.html" class="sign-up-link"><i class="fas fa-laptop"></i> Sign Up</a>
+                <svg height="50" width="40">
+                    <line x1="5" y1="5" x2="5" y2="45" style="stroke:#fff;stroke-width:2" />
+                    <line x1="10" y1="10" x2="10" y2="40" style="stroke:#fff;stroke-width:2" />
+                    <line x1="15" y1="15" x2="15" y2="35" style="stroke:#fff;stroke-width:2" />
+                </svg>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <ul class="nav-bar-list container">
+                <li><a href="#" class="list-item">Series</a></li>
+                <li><a href="price.html" class="list-item">Plan</a></li>
+                <li><a href="sign-in.html" class="list-item">Sign In</a></li>
+                <li><a href="sign-up.html" class="list-item">Sign Up</a></li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <div class="price-top-section">
+            <svg height="200" width="200">
+                <polygon points="63,20 143,60 143,140 63,180 -25,135 -25,65" style="fill:none;stroke:#ccf2ff;stroke-width:4;" />
+                <polygon points="63,50 113,75 113,125 63,150 13,125 13,75" style="fill:#ccf2ff;stroke:none;stroke-width:0;" />
+            </svg>
+            <div class="price-top-section-content container">
+                <div class="topic">
+                    <p>The most concise screencasts
+                        <br> for serious traders</p>
+                </div>
+                <div class="course-price">
+                    <div class="different-course first-course">
+                        <div class="course-topic">
+                            <h1>BASIC COURSE</h1>
+                        </div>
+                        <div class="course-svg">
+                            <svg height="120" width="246">
+                                <polygon points="123,10 173,35 173,85 123,110 73,85 73,35" style="fill:#00cccc;stroke:#fff;stroke-width:6;" />
+                            </svg>
+                        </div>
+                        <div class="course-condition">
+                            <p>10 lesson</p>
+                            <p>5 hours video</p>
+                            <p>2 weeks of training</p>
+                            <p>1 finished program</p>
+                        </div>
+                        <div class="course-order">
+                            <button>ORDER NOW</button>
+                            <svg height="20" width="140">
+                                <line x1="10" y1="5" x2="130" y2="5" style="stroke: #99e6ff;stroke-width:2" />
+                                <line x1="20" y1="10" x2="120" y2="10" style="stroke: #99e6ff;stroke-width:2" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="different-course second-course">
+                        <div class="course-topic">
+                            <h1>EXPRESS COURSE</h1>
+                        </div>
+                        <div class="course-svg">
+                            <svg height="120" width="246">
+                                <svg height="120" width="246">
+                                    <polygon points="123,10 173,35 173,85 123,110 73,85 73,35" style="fill: #00cca3;stroke:#fff;stroke-width:6;" />
+                                </svg>
+                            </svg>
+                        </div>
+                        <div class="course-condition">
+                            <p>15 lesson</p>
+                            <p>7 hours video</p>
+                            <p>2 weeks of training</p>
+                            <p>1 finished program</p>
+                        </div>
+                        <div class="course-order">
+                            <button>ORDER NOW</button>
+                            <svg height="20" width="140">
+                                <line x1="10" y1="5" x2="130" y2="5" style="stroke: #1affd1;stroke-width:2" />
+                                <line x1="20" y1="10" x2="120" y2="10" style="stroke: #1affd1;stroke-width:2" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="different-course third-course">
+                        <div class="course-topic">
+                            <h1>ADVANCED COURSE</h1>
+                        </div>
+                        <div class="course-svg">
+                            <svg height="120" width="246">
+                                <svg height="120" width="246">
+                                    <polygon points="123,10 173,35 173,85 123,110 73,85 73,35" style="fill:#8c1aff;stroke:#fff;stroke-width:6;" />
+                                </svg>
+                            </svg>
+                        </div>
+                        <div class="course-condition">
+                            <p>20 lesson</p>
+                            <p>10 hours video</p>
+                            <p>3 weeks of training</p>
+                            <p>2 finished program</p>
+                        </div>
+                        <div class="course-order">
+                            <button>ORDER NOW</button>
+                            <svg height="20" width="140">
+                                <line x1="10" y1="5" x2="130" y2="5" style="stroke: #b366ff;stroke-width:2" />
+                                <line x1="20" y1="10" x2="120" y2="10" style="stroke: #b366ff;stroke-width:2" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="different-course forth-course">
+                        <div class="course-topic">
+                            <h1>Proffesional Course</h1>
+                        </div>
+                        <div class="course-svg">
+                            <svg height="120" width="246">
+                                <svg height="120" width="246">
+                                    <polygon points="123,10 173,35 173,85 123,110 73,85 73,35" style="fill:#00cccc;stroke:#fff;stroke-width:6;" />
+                                </svg>
+                            </svg>
+                        </div>
+                        <div class="course-condition">
+                            <p>30 lesson</p>
+                            <p>15 hours video</p>
+                            <p>4 weeks of training</p>
+                            <p>3 finished program</p>
+                        </div>
+                        <div class="course-order">
+                            <button>ORDER NOW</button>
+                            <svg height="20" width="140">
+                                <line x1="10" y1="5" x2="130" y2="5" style="stroke: #99e6ff;stroke-width:2" />
+                                <line x1="20" y1="10" x2="120" y2="10" style="stroke: #99e6ff;stroke-width:2" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="price-bottom-section container">
+            <div class="discount-topic">
+                <h1>FAQ</h1>
+            </div>
+            <div class="price-discount">
+                <div class="discount-condition">
+                    <h2>Do You Offer Student Discount</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus in amet ipsum dolor voluptatibus alias vero distinctio officiis nostrum nemo, non facilis omnis est architecto porro excepturi provident laudantium beatae.</p>
+                </div>
+                <div class="discount-condition">
+                    <h2>Do You Offer Student Discount</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus in amet ipsum dolor voluptatibus alias vero distinctio officiis nostrum nemo, non facilis omnis est architecto porro excepturi provident laudantium beatae.</p>
+                </div>
+                <div class="discount-condition">
+                    <h2>Do You Offer Student Discount</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus in amet ipsum dolor voluptatibus alias vero distinctio officiis nostrum nemo, non facilis omnis est architecto porro excepturi provident laudantium beatae.</p>
+                </div>
+                <div class="discount-condition">
+                    <h2>Do You Offer Student Discount</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus in amet ipsum dolor voluptatibus alias vero distinctio officiis nostrum nemo, non facilis omnis est architecto porro excepturi provident laudantium beatae.</p>
+                </div>
+            </div>
+        </div>
+        <svg class="section-svg" height="200" width="200">
+            <polygon points="193,20 273,60 273,140 193,180 115,140 115,60" style="fill:none;stroke:#ccf2ff;stroke-width:4;" />
+            <polygon points="193,50 243,75 243,125 193,150 143,125 143,75" style="fill:#ccf2ff;stroke:none;stroke-width:0;" />
         </svg>
-        <a href="sign-up.html" class="sign-up-link"><i class="fas fa-laptop"></i> Sign Up</a>
-        <svg height="50" width="40">
-          <line x1="5" y1="5" x2="5" y2="45" style="stroke:#fff;stroke-width:2" />
-          <line x1="10" y1="10" x2="10" y2="40" style="stroke:#fff;stroke-width:2" />
-          <line x1="15" y1="15" x2="15" y2="35" style="stroke:#fff;stroke-width:2" />
+    </section>
+
+    <footer>
+        <div class="footer-content container">
+            <div class="side-part web-rights">
+                <p>mql</p>
+                <p>casts</p>
+                <p>the most concise screencasts
+                    <br> for serious traders </p>
+                <p><i class="far fa-copyright"></i> MQL cast 2017. all rights reserved</p>
+            </div>
+            <div class="footer-link">
+                <ul class="footer-list">
+                    <li>Learn</li>
+                    <li><a href="#">Series</a></li>
+                    <li><a href="price.html">Plan</a></li>
+                    <li><a href="sign-in.html">Sign In</a></li>
+                    <li><a href="sign-up.html">Sign Up</a></li>
+                </ul>
+                <ul class="footer-list">
+                    <li>Extras</li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Comunity Tutorials</a></li>
+                </ul>
+            </div>
+            <div class="footer-icon">
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+            </div>
+        </div>
+        <svg height="255" width="330">
+            <polygon points="150,50 290,125 290,275 150,350 10,275 10,125" style="fill:none;stroke:#ccf2ff;stroke-width:6;stroke-opacity:.5" />
+            <polygon points="150,110 240,155 240,275 150,300 60,260 60,155" style="fill:#ccf2ff;stroke:none;stroke-width:0;fill-opacity:.5;" />
         </svg>
-      </div>
-    </div>
-  </header>
-  <section>
-  	<div class="price-top-section">
-  		<svg height="200" width="200">
-        <polygon points="63,20 143,60 143,140 63,180 -25,135 -25,65" style="fill:none;stroke:#ccf2ff;stroke-width:4;" />
-  			<polygon points="63,50 113,75 113,125 63,150 13,125 13,75" style="fill:#ccf2ff;stroke:none;stroke-width:0;" />
-  		</svg>
-  		<div class="price-top-section-content container">
-  			<div class="topic">
-  				<p>The most concise screencasts<br> for serious traders</p>
-  			</div>
-  			<div class="course-price">
-  				<div class="different-course first-course">
-  					<div class="course-topic">
-  						<h1>BASIC COURSE</h1>
-  					</div>
-  					<div class="course-svg">
-  						<svg height="120" width="246">
-  							<polygon points="123,10 173,35 173,85 123,110 73,85 73,35" style="fill:#00cccc;stroke:#fff;stroke-width:6;" />
-  						</svg>
-  					</div>
-  					<div class="course-condition">
-  					    <p>10 lesson</p>
-  					    <p>5 hours video</p>
-  					    <p>2 weeks of training</p>
-  					    <p>1 finished program</p>
-  				    </div>
-  					<div class="course-order">
-  						<button>ORDER NOW</button>
-  						<svg height="20" width="140">
-  					   	    <line x1="10" y1="5" x2="130" y2="5" style="stroke: #99e6ff;stroke-width:2" />
-                            <line x1="20" y1="10" x2="120" y2="10" style="stroke: #99e6ff;stroke-width:2" />
-  						</svg>
-  					</div>
-  				</div>
-  				<div class="different-course second-course">
-  					<div class="course-topic">
-  						<h1>EXPRESS COURSE</h1>
-  					</div>
-  					<div class="course-svg">
-  						<svg height="120" width="246">
-  							<svg height="120" width="246">
-  							<polygon points="123,10 173,35 173,85 123,110 73,85 73,35" style="fill: #00cca3;stroke:#fff;stroke-width:6;" />
-  						</svg>
-  						</svg>
-  					</div>
-  					<div class="course-condition">
-  					    <p>15 lesson</p>
-  					    <p>7 hours video</p>
-  					    <p>2 weeks of training</p>
-  					    <p>1 finished program</p>
-  				    </div>
-  					<div class="course-order">
-  						<button>ORDER NOW</button>
-  						<svg height="20" width="140">
-  							<line x1="10" y1="5" x2="130" y2="5" style="stroke: #1affd1;stroke-width:2" />
-                            <line x1="20" y1="10" x2="120" y2="10" style="stroke: #1affd1;stroke-width:2" />
-  						</svg>
-  					</div>
-  				</div>
-  				 <div class="different-course third-course">
-  					<div class="course-topic">
-  						<h1>ADVANCED COURSE</h1>
-  					</div>
-  					<div class="course-svg">
-  						<svg height="120" width="246">
-  							<svg height="120" width="246">
-  							<polygon points="123,10 173,35 173,85 123,110 73,85 73,35" style="fill:#8c1aff;stroke:#fff;stroke-width:6;" />
-  						</svg>
-  						</svg>
-  					</div>
-  					<div class="course-condition">
-  					    <p>20 lesson</p>
-  					    <p>10 hours video</p>
-  					    <p>3 weeks of training</p>
-  					    <p>2 finished program</p>
-  				    </div>
-  					<div class="course-order">
-  						<button>ORDER NOW</button>
-  						<svg height="20" width="140">
-  							<line x1="10" y1="5" x2="130" y2="5" style="stroke: #b366ff;stroke-width:2" />
-                            <line x1="20" y1="10" x2="120" y2="10" style="stroke: #b366ff;stroke-width:2" />
-  						</svg>
-  					</div>
-  				</div>
-  				<div class="different-course forth-course">
-  					<div class="course-topic">
-  						<h1>Proffesional Course</h1>
-  					</div>
-  					<div class="course-svg">
-  						<svg height="120" width="246">
-  							<svg height="120" width="246">
-  							<polygon points="123,10 173,35 173,85 123,110 73,85 73,35" style="fill:#00cccc;stroke:#fff;stroke-width:6;" />
-  						</svg>
-  						</svg>
-  					</div>
-  					<div class="course-condition">
-  					    <p>30 lesson</p>
-  					    <p>15 hours video</p>
-  					    <p>4 weeks of training</p>
-  					    <p>3 finished program</p>
-  				    </div>
-  					<div class="course-order">
-  						<button>ORDER NOW</button>
-  						<svg height="20" width="140">
-  							<line x1="10" y1="5" x2="130" y2="5" style="stroke: #99e6ff;stroke-width:2" />
-                            <line x1="20" y1="10" x2="120" y2="10" style="stroke: #99e6ff;stroke-width:2" />
-  						</svg>
-  					</div>
-  				</div>
-  			</div>
-  		</div>
-  	</div>
-  	<div class="price-bottom-section container">
-  		<div class="discount-topic">
-  			<h1>FAQ</h1>
-  		</div>
-  		<div class="price-discount">
-  			<div class="discount-condition">
-  				<h2>Do You Offer Student Discount</h2>
-  				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus in amet ipsum dolor voluptatibus alias vero distinctio officiis nostrum nemo, non facilis omnis est architecto porro excepturi provident laudantium beatae.</p>
-  			</div>
-  			<div class="discount-condition">
-  				<h2>Do You Offer Student Discount</h2>
-  				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus in amet ipsum dolor voluptatibus alias vero distinctio officiis nostrum nemo, non facilis omnis est architecto porro excepturi provident laudantium beatae.</p>
-  			</div>
-  			<div class="discount-condition">
-  				<h2>Do You Offer Student Discount</h2>
-  				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus in amet ipsum dolor voluptatibus alias vero distinctio officiis nostrum nemo, non facilis omnis est architecto porro excepturi provident laudantium beatae.</p>
-  			</div>
-  			<div class="discount-condition">
-  				<h2>Do You Offer Student Discount</h2>
-  				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus in amet ipsum dolor voluptatibus alias vero distinctio officiis nostrum nemo, non facilis omnis est architecto porro excepturi provident laudantium beatae.</p>
-  			</div>
-  		</div>
-  	</div>
-    <svg class="section-svg" height="200" width="200">
-        <polygon points="193,20 273,60 273,140 193,180 115,140 115,60" style="fill:none;stroke:#ccf2ff;stroke-width:4;" />
-        <polygon points="193,50 243,75 243,125 193,150 143,125 143,75" style="fill:#ccf2ff;stroke:none;stroke-width:0;" />
-    </svg>
-  </section>
-
-   <footer>
-    <div class="footer-content container">
-      <div class="side-part web-rights">
-        <p>mql</p>
-        <p>casts</p>
-        <p>the most concise screencasts <br> for serious traders </p>
-        <p><i class="far fa-copyright"></i> MQL cast 2017. all rights reserved</p>
-      </div>
-      <div class="footer-link">
-        <ul class="footer-list">
-          <li>Learn</li>
-          <li><a href="#">Series</a></li>
-          <li><a href="price.html">Plan</a></li>
-          <li><a href="sign-in.html">Sign In</a></li>
-          <li><a href="sign-up.html">Sign Up</a></li>
-        </ul>
-        <ul class="footer-list">
-          <li>Extras</li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Terms</a></li>
-          <li><a href="#">Comunity Tutorials</a></li>
-        </ul>
-      </div>
-      <div class="footer-icon">
-        <a href="#"><i class="fab fa-twitter-square"></i></a>
-        <a href="#"><i class="fab fa-facebook-square"></i></a>
-      </div>
-    </div>
-    <svg height="255" width="330">
-        <polygon points="150,50 290,125 290,275 150,350 10,275 10,125" style="fill:none;stroke:#ccf2ff;stroke-width:6;stroke-opacity:.5" />
-        <polygon points="150,110 240,155 240,275 150,300 60,260 60,155" style="fill:#ccf2ff;stroke:none;stroke-width:0;fill-opacity:.5;" />
-    </svg>
-  </footer>
-
-<script src="https://kit.fontawesome.com/27107847e4.js" crossorigin="anonymous"></script>	
+    </footer>
+    <script src="https://kit.fontawesome.com/27107847e4.js" crossorigin="anonymous"></script>
+    <script src="trade.js"></script>
 </body>
+
 </html>
